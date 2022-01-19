@@ -17,9 +17,14 @@ $('a[href^="#"]').on("click", function (event) {
   }
 });
 
+const mailButton = document.querySelector(".cta-btn--resume");
+mailButton.setAttribute("href", "mailto:ze3062786@gmail.com");
+
 function addResume(pdf) {
   if (!pdf) return;
 
+  // const mailButton = document.querySelector(".cta-btn--resume");
+  // mailButton.setAttribute("href", "mailto:ze3062786@gmail.com");
   const resumeButton = document.querySelector(".cta-btn--resume");
   resumeButton.setAttribute("href", pdf);
 }
